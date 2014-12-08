@@ -1,0 +1,33 @@
+<include href="header.html"/>
+<include href="navbar.html"/>
+<div class="container">
+    <div class="row">
+    <div class="row row-centered">
+    <div class="col-md-8 col-centered">
+      <div class="panel panel-default">
+        <div class="panel-heading"><strong>Upload Files</strong> <small>One file each time</small></div>
+        <div class="panel-body">
+          <!-- Standard Form -->
+          <h4>Select file from your computer</h4>
+          <form action="/" method="post" enctype="multipart/form-data">
+            <div class="form-inline">
+              <div class="form-group">
+                <input type="file" name="user_file">
+              </div>
+              <button type="submit" class="btn btn-sm btn-primary">Upload image</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <check if="{{ @ui_error_messages }}">
+        <true>
+          <repeat group="{{ @ui_error_messages }}" value="{{ @message }}">
+            <div class="alert alert-danger" role="alert">{{ @message }}</div>
+          </repeat>
+        </true>
+      </check>
+    </div>
+    </div>
+    </div>
+    </div> <!-- /container -->
+<include href="footer.html"/>
