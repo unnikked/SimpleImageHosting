@@ -72,9 +72,9 @@ Example response:
 
 ## Screenshots
 
-[Imgur](http://i.imgur.com/HJXwNI7.png)
+![Home](http://i.imgur.com/HJXwNI7.png)
 
-[Imgur](http://i.imgur.com/6my6J2r.png)
+![Show](http://i.imgur.com/6my6J2r.png)
 
 ## License
 
